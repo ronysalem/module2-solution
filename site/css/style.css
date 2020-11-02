@@ -1,0 +1,87 @@
+
+/*--------- Base styles-------------*/
+*{
+	box-sizing: border-box;
+}
+
+
+#maintitle {
+	text-align: center;
+	font-family: helvetica ;
+}
+
+.box {
+	background-color: grey;
+	border: 1px solid black ;
+	position: relative;
+	
+	
+}
+
+.subbox {
+	background-color: pink;
+	border: 1px solid black;
+	float: right;
+	text-align: center;
+	width: 100px; 
+}
+
+.subtitle {
+	text-align: center;
+	font-weight: bold;
+}
+
+.text {
+ clear: both;
+ padding: 10px;
+
+}
+
+
+
+/*------------desktop view----------*/
+
+@media (min-width: 992px){
+	 .col-lg-4  {
+    float: left;
+
+  } 
+
+   .col-lg-4{
+  	width: 33.33%
+  }
+
+}
+
+
+
+/*------------tablet view----------*/
+@media (min-width: 768px) and (max-width: 991px){
+	 .col-md-6 ,.col-md-12 {
+    float: left;
+
+  } 
+  
+   .col-md-6{
+  	width: 50%
+  }
+
+   .col-md-12{
+  	width: 100%
+  }
+}
+
+
+/*------------mobile view----------*/
+@media (max-width: 767px){
+	 .col-sm-12 {
+    float: left;
+   
+  } 
+  
+
+   .col-sm-12{
+  	width: 100%
+  }
+
+}
